@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <!-- Background Glow -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main Logo -->
+  <g filter="url(#glow)">
+    <!-- Dice Icon -->
+    <path d="M30 15 L45 15 L45 30 L30 30 Z" fill="url(#logoGradient)" />
+    <circle cx="34" cy="19" r="1.5" fill="white"/>
+    <circle cx="41" cy="19" r="1.5" fill="white"/>
+    <circle cx="34" cy="26" r="1.5" fill="white"/>
+    <circle cx="41" cy="26" r="1.5" fill="white"/>
+    
+    <!-- Text -->
+    <text x="55" y="35" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="white">
+      <tspan fill="url(#logoGradient)">Bet</tspan>
+      <tspan x="95" fill="white">Win</tspan>
+    </text>
+  </g>
+</svg>
