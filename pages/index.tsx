@@ -164,7 +164,7 @@ const Home: NextPage = () => {
               <span className="inline-block ml-3 transform animate-wiggle">✨</span>
             </h2>
             <p className="text-xl text-gray-600 mb-16">
-              No cap, just facts. And maybe a little sass. 
+            Straight truth, no fluff. And a side of spice. 
             </p>
           </div>
 
