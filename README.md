@@ -78,4 +78,6 @@ Blockchain:
 - EVM compatible
 - Smart contract powered
 
+## To get FAZ tokens contact me on my TG: https://t.me/OxNityam
+
 Built with ❤ by Team: 8Bit
