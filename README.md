@@ -13,6 +13,12 @@ You can verify our L1 on Avascan: [View on Avascan](https://testnet.avascan.info
 ## About SureBet
 SureBet is a simple betting platform built on our custom Avalanche L1 chain. You can create bets, join betting pools, and collect winnings - all managed by smart contracts for complete transparency.
 
+## Check Out Demo
+View our demo on the following:
+- Telegram Mini App: https://t.me/OxSureBet_bot
+- Youtube: https://youtu.be/PPcuPECJDu4
+- Live URL: https://sure-bet.vercel.app/
+
 ### What You Can Do
 
 As a Better:
