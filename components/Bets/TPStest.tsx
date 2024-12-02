@@ -10,7 +10,7 @@ const TpsTester = () => {
         totalTx: number;
         duration: number;
     } | null>(null);
-    const [provider, setProvider] = useState<ethers.providers.Web3Provider | null>(null);
+    const [provider, setProvider] = useState<ethers.providers.JsonRpcProvider | null>(null);
     const [wallet, setWallet] = useState<ethers.Wallet | null>(null);
     const [diagnosticInfo, setDiagnosticInfo] = useState<string[]>([]);
     const [connectionStatus, setConnectionStatus] = useState<{
@@ -22,7 +22,7 @@ const TpsTester = () => {
     });
 
     const runningRef = useRef(false);
-    const providerRef = useRef<ethers.providers.Web3Provider | null>(null);
+    const providerRef = useRef<ethers.providers.JsonRpcProvider | null>(null);
     const walletRef = useRef<ethers.Wallet | null>(null);
     const nonceRef = useRef(0);
     const startTimeRef = useRef<Date | null>(null);
