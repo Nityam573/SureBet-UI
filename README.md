@@ -1,108 +1,75 @@
-# BetWin - Decentralized Betting Platform on Avalanche 🎲
+# SureBet - Decentralized Betting on NFT-1 Chain 🎲
 
-BetWin is a modern, user-friendly decentralized betting platform built on the Avalanche blockchain. Create custom betting events, participate in bets, and earn rewards in a transparent and trustless environment.
+## Network Configuration
+Add our custom L1 to your EVM wallet:
+- Network Name: NFT-1
+- Chain ID: 57993
+- Token Symbol: FAZ
+- RPC URL: https://subnets.avax.network/formalmocc/testnet/rpc
+- Explorer: https://subnets-test.avax.network/formalmocc
 
-## 🌟 Features
+You can verify our L1 on Avascan: [View on Avascan](https://testnet.avascan.info/blockchain/2FDwtQpLRsX7AehS452JuxnaYwpT2oBtxx1dbtZFG17FgTTN73)
 
-### For Bettors
-- **Create Custom Bets**: Set up binary outcome betting events with customizable duration
-- **Participate in Bets**: Browse and join active betting pools
-- **Smart Settlement**: Automatic winnings calculation and distribution
-- **User Dashboard**: Track your active and resolved bets
-- **Instant Claims**: Claim your winnings with one click
-- **Real-time Updates**: Live updates on bet status and pool sizes
+## About SureBet
+SureBet is a simple betting platform built on our custom Avalanche L1 chain. You can create bets, join betting pools, and collect winnings - all managed by smart contracts for complete transparency.
 
-### For Bet Creators
-- **Earn Rewards**: Get 3% of the total pool size as a creator fee
-- **Flexible Duration**: Set betting periods from 1 hour to 30 days
-- **Resolution Control**: Resolve your bets when the outcome is known
-- **Creator Dashboard**: Manage all your created bets in one place
+### What You Can Do
 
-### Platform Features
-- **Lightning Fast**: Built on Avalanche for near-instant finality
-- **Low Fees**: Minimal transaction costs on Avalanche
-- **Transparent**: All betting logic secured by smart contracts
-- **Mobile Responsive**: Seamless experience across all devices
-- **User-Friendly**: Modern UI with smooth animations and transitions
+As a Better:
+- Make bets on yes/no outcomes
+- Join other people's betting pools
+- Track your bets in your personal dashboard
+- Get your winnings instantly
+- See live updates on all active bets
 
-## 🔧 Technical Stack
+As a Bet Creator:
+- Earn 3% fee from each betting pool you create
+- Choose how long bets run (1 hour to 30 days)
+- Mark bets as complete when finished
+- Manage all your bets in one place
 
-### Frontend
-- Next.js for server-side rendering
-- TailwindCSS for styling
-- Framer Motion for animations
-- RainbowKit for wallet connection
-- wagmi for blockchain interactions
+Platform Benefits:
+- Fast transactions on our custom L1
+- Low gas fees
+- Everything handled by smart contracts
+- Works great on phones and computers
+- Easy to use interface
+- Test the TPS (Transactions Per Second) of our L1
 
-### Smart Contracts
+### Money Split Example
+If there's 100 FAZ in the pool:
+- Winners get 97 FAZ
+- Creator gets 3 FAZ
+
+Example:
+
+Total Pool: 100 FAZ
+Yes Side: 40 FAZ (Player 1: 15 FAZ, Player 2: 25 FAZ)
+No Side: 60 FAZ
+
+If Yes Wins:
+- Creator: 3 FAZ
+- Player 1: 36.5 FAZ
+- Player 2: 60.5 FAZ
+
+
+### Tech Details
+Frontend:
+- Next.js
+- TailwindCSS
+- Framer Motion
+- RainbowKit
+- wagmi
+
+Smart Contracts:
 - Solidity 0.8.19
-- OpenZeppelin contracts for security
-- Non-custodial design
-- Automated settlement logic
+- OpenZeppelin
+- Non-custodial
+- Automatic settlement
 
-### Blockchain
-- Avalanche C-Chain Testnet
+Blockchain:
+- Custom NFT-1 L1 on Avalanche
 - EVM compatible
 - Smart contract powered
 
-## 🎯 How It Works
-
-### Creating a Bet
-1. Connect your wallet
-2. Click "Create Bet"
-3. Enter bet description
-4. Set duration (1 hour to 30 days)
-5. Confirm transaction
-6. Share with participants
-
-### Placing a Bet
-1. Browse available bets
-2. Choose your position (Yes/No)
-3. Enter bet amount
-4. Confirm transaction
-5. Wait for resolution
-
-### Resolution & Claiming
-1. Creator resolves bet after end time
-2. Winners can claim their share
-3. Automatic fee distribution to creator
-4. Proportional winnings based on bet size
-
-## 💎 Pool Distribution
-
-For each bet:
-- 97% distributed among winners
-- 3% to bet creator
-- Proportional distribution based on bet size
-
-Example:
-```
-Total Pool: 100 AVAX
-Yes Pool: 40 AVAX (2 bettors: 15 & 25 AVAX)
-No Pool: 60 AVAX (3 bettors)
-
-If "Yes" wins:
-- Creator gets: 3 AVAX (3%)
-- First bettor (15 AVAX) gets: ~36.5 AVAX
-- Second bettor (25 AVAX) gets: ~60.5 AVAX
-```
-## 🛣️ Roadmap
-
-### Phase 1 (Current)
-- ✅ Basic betting functionality
-- ✅ User dashboard
-- ✅ Creator rewards
-
-### Phase 2
-- Multiple outcome bets
-- Social features
-- Bet categories
-- Advanced analytics
-
-### Phase 3
-- Liquidity pools
-- Token integration
-- Governance system
-- Mobile app
-
-Built with ❤️ by XavierOP877
+Built with ❤ by Team: 8Bit
