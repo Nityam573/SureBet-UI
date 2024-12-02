@@ -84,7 +84,7 @@ const CreateBet: React.FC = () => {
     </AnimatePresence>
 
     <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
-      <h1 className="text-3xl font-bold text-gray-800 mb-8">Create New Bet</h1>
+      <h1 className="text-3xl font-bold text-gray-800 mb-8">Place New Bet</h1>
 
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -171,18 +171,6 @@ const CreateBet: React.FC = () => {
               )}
             </div>
 
-            <div className="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
-              <Info className="w-5 h-5 text-blue-500 mt-0.5" />
-              <div className="text-sm text-blue-700">
-                <p className="font-medium">Important Notes:</p>
-                <ul className="list-disc ml-4 mt-1 space-y-1">
-                  <li>Minimum duration: 1 hour</li>
-                  <li>Maximum duration: 30 days</li>
-                  <li>You will earn 3% of the total betting pool as the creator</li>
-                  <li>Once created, the duration cannot be modified</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </form>

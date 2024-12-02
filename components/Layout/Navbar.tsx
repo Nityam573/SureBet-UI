@@ -19,11 +19,11 @@ const Navbar: React.FC = () => {
   }, []);
 
   const menuItems = [
-    { path: '/', label: 'Home' },
-    { path: '/create-bet', label: 'Create Bet' },
-    { path: '/all-bets', label: 'All Bets' },
-    { path: '/my-bets', label: 'My Bets' },
-    { path: '/created-bets', label:'Created Bets'},
+    { path: '/', label: 'DashBoard' },
+    { path: '/place-bet', label: 'Place Bet' },
+    { path: '/open-bets', label: 'Open Bets' },
+    { path: '/active-wagers', label: 'Active Wagers' },
+    { path: '/created-bets', label:'My Created Bets'},
     { path: '/tps-test', label: 'TPS Test'}
   ];
 

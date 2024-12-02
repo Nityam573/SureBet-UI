@@ -198,7 +198,7 @@ const UserBets: React.FC = () => {
         <div className="flex justify-between items-start">
           <div className="space-y-2">
             <p className="text-purple-600 font-semibold text-lg">
-              Your Bet: {formatEther(bet.amount)} FAZ
+              Your Wager: {formatEther(bet.amount)} FAZ
             </p>
             <span
               className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
@@ -379,7 +379,7 @@ const UserBets: React.FC = () => {
     <div className="w-full">
       <div className="bg-white rounded-2xl shadow-lg p-6">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-bold text-gray-800">My Bets</h1>
+          <h1 className="text-2xl font-bold text-gray-800">Active Wagers</h1>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -413,7 +413,7 @@ const UserBets: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center py-12"
           >
-            <p className="text-gray-600 text-lg">You have not placed any bets yet.</p>
+            <p className="text-gray-600 text-lg">You have not placed any wagers yet.</p>
           </motion.div>
         ) : (
           <>
@@ -430,7 +430,7 @@ const UserBets: React.FC = () => {
                     ? 'bg-purple-500 text-white shadow-md'
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
               >
-                Active Bets ({userBets.filter(bet => !bet.isResolved).length})
+                Active Wagers ({userBets.filter(bet => !bet.isResolved).length})
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.02 }}
@@ -444,7 +444,7 @@ const UserBets: React.FC = () => {
                     ? 'bg-ff3649 text-white shadow-md'
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
               >
-                Resolved Bets ({userBets.filter(bet => bet.isResolved).length})
+                Resolved Wagers ({userBets.filter(bet => bet.isResolved).length})
               </motion.button>
             </div>
             <AnimatePresence mode="wait">
