@@ -33,7 +33,6 @@ interface UserBet {
 }
 
 const UserBets: React.FC = () => {
-  // State declarations
   const [userBets, setUserBets] = useState<UserBet[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -43,7 +42,6 @@ const UserBets: React.FC = () => {
   const [claimingBetId, setClaimingBetId] = useState<number | null>(null);
   const [claimTxHash, setClaimTxHash] = useState<string | null>(null);
 
-  // Contract hooks
   const publicClient = usePublicClient();
   const { address } = useAccount();
 
@@ -82,7 +80,6 @@ const UserBets: React.FC = () => {
     },
   });
 
-  // Helper function to calculate winnings
   const calculateWinnings = (bet: UserBet) => {
     if (bet.winningOption !== bet.option) return BigInt(0);
     
@@ -93,7 +90,6 @@ const UserBets: React.FC = () => {
     return userShare - creatorFee;
   };
 
-  // Fetch bets function
   const fetchUserBets = async () => {
     if (betsCount && publicClient && address) {
       setIsLoading(true);
@@ -151,7 +147,6 @@ const UserBets: React.FC = () => {
     }
   };
 
-  // Event handlers
   const handleRefresh = async () => {
     if (isRefreshing) return;
     setIsRefreshing(true);
@@ -182,7 +177,6 @@ const UserBets: React.FC = () => {
     }
   };
 
-  // Effects
   useEffect(() => {
     if (betsCount && publicClient && address) {
       fetchUserBets();
@@ -369,7 +363,6 @@ const UserBets: React.FC = () => {
     );
   };
 
-  // Error state
   if (error) {
     return (
       <motion.div
@@ -382,7 +375,6 @@ const UserBets: React.FC = () => {
     );
   }
 
-  // Main return
   return (
     <div className="w-full">
       <div className="bg-white rounded-2xl shadow-lg p-6">

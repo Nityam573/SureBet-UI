@@ -25,14 +25,12 @@ const CreateBet: React.FC = () => {
     onSuccess: () => {
       setShowSuccess(true);
       resetForm();
-      // Hide success message after 5 seconds
       setTimeout(() => setShowSuccess(false), 5000);
     },
   });
 
   const isLoading = isWriteLoading || isTransactionPending;
 
-  // Update end time only on client side
   useEffect(() => {
     const endTime = new Date(Date.now() + (parseInt(duration) * (timeUnit === 'days' ? 86400000 : 3600000)));
     const formattedDate = endTime.toLocaleDateString('en-GB', {
@@ -67,8 +65,7 @@ const CreateBet: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4">
-  <div className="max-w-7xl mx-auto"> {/* Increased max width to accommodate side-by-side layout */}
-    {/* Success Notification stays at top */}
+  <div className="max-w-7xl mx-auto"> 
     <AnimatePresence>
       {showSuccess && (
         <motion.div
@@ -91,9 +88,8 @@ const CreateBet: React.FC = () => {
 
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* Left Column */}
           <div className="space-y-6">
-            {/* Description Section */}
+           
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Bet Description
@@ -108,7 +104,6 @@ const CreateBet: React.FC = () => {
               />
             </div>
 
-            {/* Submit Button */}
             <motion.button
               whileHover={!isLoading ? { scale: 1.02 } : {}}
               whileTap={!isLoading ? { scale: 0.98 } : {}}
@@ -130,9 +125,7 @@ const CreateBet: React.FC = () => {
             </motion.button>
           </div>
 
-          {/* Right Column */}
           <div className="space-y-6">
-            {/* Duration Section */}
             <div className="space-y-4">
               <label className="block text-sm font-medium text-gray-700">
                 Betting Duration
@@ -178,7 +171,6 @@ const CreateBet: React.FC = () => {
               )}
             </div>
 
-            {/* Important Notes */}
             <div className="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
               <Info className="w-5 h-5 text-blue-500 mt-0.5" />
               <div className="text-sm text-blue-700">

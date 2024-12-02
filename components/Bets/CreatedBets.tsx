@@ -192,7 +192,6 @@ const CreatedBets: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Error Notification */}
         <AnimatePresence>
           {error && (
             <motion.div
@@ -234,7 +233,6 @@ const CreatedBets: React.FC = () => {
           </div>
         )}
 
-        {/* Resolution Modal */}
         <AnimatePresence>
           {resolvingBetId !== null && (
             <motion.div

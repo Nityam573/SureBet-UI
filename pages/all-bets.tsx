@@ -7,7 +7,7 @@ const AllBetsPage: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>All Bets - BetWin</title>
+        <title>All Bets - SureBet</title>
         <meta name="description" content="View all available bets on our decentralized betting platform" />
       </Head>
 

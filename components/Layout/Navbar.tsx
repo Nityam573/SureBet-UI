@@ -23,7 +23,8 @@ const Navbar: React.FC = () => {
     { path: '/create-bet', label: 'Create Bet' },
     { path: '/all-bets', label: 'All Bets' },
     { path: '/my-bets', label: 'My Bets' },
-    { path: '/created-bets', label:'Created Bets'}
+    { path: '/created-bets', label:'Created Bets'},
+    { path: '/tps-test', label: 'TPS Test'}
   ];
 
   return (
@@ -36,14 +37,6 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-12xl mx-auto px-0 sm:px-6 lg:px-3">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          {/* <Link href="/" className="flex-shrink-0">
-            <span className="text-xl font-bold bg-clip-text bg-ff3649 ">
-              SureBet
-            </span>
-          </Link> */}
-
-          {/* Center Navigation - Desktop */}
           <div className="hidden md:block flex-1 mx-0">
             <div className="flex items-center justify-left">
               <div className="flex items-center space-x-10 rounded-full p-1 "  style={{ backgroundColor: '#FF3649' }}>
@@ -76,12 +69,6 @@ const Navbar: React.FC = () => {
               </div>
             </div>
           </div>
-          {/* <Link href="/" className="flex-shrink-0">
-            <span className="text-xl justify-center font-bold bg-clip-text  ">
-              SureBet
-            </span>
-          </Link> */}
-          {/* Right Section - Connect Button & Mobile Menu */}
           <div className="flex items-center gap-4">
             <motion.div
               whileHover={{ scale: 1.02 }}
@@ -90,7 +77,6 @@ const Navbar: React.FC = () => {
               <ConnectButton />
             </motion.div>
 
-            {/* Mobile Menu Button */}
             <button
               className="md:hidden p-2 rounded-lg bg-black text-white hover:text-white transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -104,7 +90,6 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div

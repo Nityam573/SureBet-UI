@@ -1,19 +1,19 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import UserBets from '../components/User/UserBets';
+import TpsTester from '../components/Bets/TPStest';
 
 
 const MyBetsPage: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>My Bets - SureBet</title>
+        <title>TPSTest - SureBet</title>
         <meta name="description" content="View your bets and winnings on our decentralized betting platform" />
       </Head>
 
       <main className="container mx-auto p-4">
-        <UserBets />
+        <TpsTester />
         
       </main>
     </Layout>

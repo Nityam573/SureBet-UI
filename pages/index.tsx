@@ -15,7 +15,7 @@ import Image from 'next/image';
 import SureBet from '@/assets/SureBet.png';
 
 interface FeatureCardProps {
-  Icon: any; // We'll type this better but for now letting it be any
+  Icon: any;
   title: string;
   description: string;
 }
@@ -97,7 +97,7 @@ const Home: NextPage = () => {
       `}</style>
 
       <Head>
-        <title>SuperBet</title>
+        <title>SureBet</title>
         <meta name="description" content="Where smart contracts meet smart bets. Join the coolest betting platform on Avalanche!" />
         <link rel="icon" href="/Sure-Bet.svg" />
       </Head>
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
     <div className={`relative container mx-auto px-4 pt-20 pb-32 transition-all duration-1000 transform ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
     }`}>
-        {/* Background watermark image */}
+        
         <div className="absolute inset-0 pointer-events-none opacity-10 flex items-center justify-center">
         <Image 
         src={SureBet}

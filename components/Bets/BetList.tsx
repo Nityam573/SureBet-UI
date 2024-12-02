@@ -64,7 +64,6 @@ const BetList: React.FC = () => {
                 winningOption: Number(bet[8])
               };
               
-              // Only add bets that are not resolved and haven't expired
               const currentTime = BigInt(Math.floor(Date.now() / 1000));
               if (!betObject.isResolved && betObject.endTime > currentTime) {
                 console.log(`Adding active bet ${i}:`, betObject);
