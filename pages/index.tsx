@@ -141,7 +141,7 @@ const Home: NextPage = () => {
               </h1>
               
             
-            <p className="text-2xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">Not your average gambling site. Unless your grandpa moonlights as a blockchain wizard and considers probability algorithms his bedtime reading. In that case, bump fists with him from us! 🎲
+            <p className="text-2xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">Not your average gambling site. Unless your grandpa moonlights as a blockchain wizard and considers probability algorithms his bedtime reading. In that case, bump fists with him from us! ♠♣♥️♦️ 
             </p>
             <div className="flex justify-center gap-6">
               <button 
